@@ -3,9 +3,53 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="./index.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/master.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
     <title>Data Visulization</title>
   </head>
-  <body>
-    
+  <body onload="getData()">
+    <table id = "data-table">
+      <tr>
+        <td>
+          <div class="chart-title">
+            <p class="titles">Relevance</p>
+          </div>
+          <div class="graph-container">
+            <canvas id="canvas1" width="300" height="300"></canvas>
+          </div>
+        </td>
+        <td>
+          <div class="chart-title">
+            <p class="titles">Likelihood</p>
+          </div>
+          <div class="graph-container">
+            <canvas id="canvas2" width="300" height="300"></canvas>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div class="chart-title">
+            <p class="titles">Impact</p>
+          </div>
+          <div class="graph-container">
+            <canvas id="canvas3" width="300" height="300"></canvas>
+          </div>
+        </td>
+        <td>
+          <div class="intensity">
+            <p id="iten1">Relevance: ?</p>
+          </div>
+          <div class="intensity">
+            <p id="iten2">Likelihood: ?</p>
+          </div>
+          <div class="intensity">
+            <p id="iten3">Total Intensity: ?</p>
+          </div>
+        </td>
+      </tr>
+    </table>
+    <script src="./index.js" charset="utf-8"></script>
   </body>
 </html>
